@@ -10,14 +10,24 @@
     <link rel="shortcut icon" href="https://img.utdstc.com/icons/google-tasks-android.png:225" type="image/x-icon">
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-app.js"></script>    
     <script src="https://www.gstatic.com/firebasejs/6.2.0/firebase-firestore.js"></script>
-    <title>Primera all con FIREBASE!</title>
+    <title>TaskList con FIREBASE!</title>
   </head>
   <body style="background: linear-gradient(145deg, rgba(137,138,48,1) 18%, rgba(0,207,201,1) 76%);background-repeat:no-repeat;min-height:100vh">
         <section class="container">
-            <h1 class="text-white">Tareas!</h1>
-            <input type="text" name="nombre" id="nombre" class="form-control my-3" placeholder="Nombre">
-            <input type="text" name="apellido" id="apellido" class="form-control my-3" placeholder="Tarea">
-            <input type="text" name="fecha" id="fecha" class="form-control my-3" placeholder="Descripción">
+            <div class="text-center">
+                <h1 class="text-white">Task List</h1>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <input type="text" name="nombre" id="nombre" class="form-control my-3" placeholder="Nombre">
+              </div>
+              <div class="col-lg-6">
+                <input type="text" name="apellido" id="apellido" class="form-control my-3" placeholder="Tarea">
+              </div>
+              <div class="col-lg-12">
+                <input type="text" name="fecha" id="fecha" class="form-control my-3" placeholder="Descripción">
+              </div>
+            </div>
             <button class="btn btn-info" id="boton" onclick="guardar()">Guardar</button>
             <article class="my-3 row" id="tabla">
             </article>
